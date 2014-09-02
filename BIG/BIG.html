@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Simple Site Try</title>
+    <title>BIG - Boulder Insurance Group</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -10,7 +10,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="BIG/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/BIG.css">
 
@@ -20,96 +20,293 @@
 <div class="container">
 
     <div class="row">
-        <div id="homeLogo" class="col-xs-2">
-            <a href="#home">
-                <img id="bigLogo" src="img/BIG_logo.gif" width="175" height="100" />
+        <div id="homeLogo" class="col-sm-2">
+            <a href="#home" role="pill" data-toggle="pill">
+                <img id="bigLogo" src="img/BIG_logo.gif" width="100%" height="auto" alt="Logo for Boulder Insurance Group BIG" />
             </a>
         </div>
-        <div class="col-xs-6">
-            <img src="img/EBH_9588.JPG" width="700" height="100" />
+        <div class="col-sm-6">
+            <img src="img/EBH_9588 (2).JPG" width="100%" height="auto" alt="Boulder Flatirons" />
         </div>
-        <div class="col-xs-1">
-            <img src="img/MattsPhoto.jpg" width="100" height="100" />
+        <div class="col-sm-1">
+            <img src="img/MattsPhoto.jpg" width="100%" height="auto" alt="Matt DeYoung insurance broker" />
         </div>
-        <div class="col-xs-2">
+        <div class="col-sm-2">
             <ul class="simple">
                 <li><strong>Contact Us</strong></li>
                 <li>Matt DeYoung</li>
                 <li>303.517.5225</li>
-                <li><a href="mailto:mjdeyoung@thinkbigboulder.com">Email: mjdeyoung@thinkbigboulder.com</a></li>
+                <li><a href="mailto:mjdeyoung@thinkbigboulder.com">mjdeyoung@thinkbigboulder.com</a></li>
             </ul>
         </div>
     </div>
 
     <div class="row">
+        <div class="col-sm-12">
+            <!-- Nav pills -->
+            <ul id="mainNav" class="nav nav-pills">
+                <li id="homePill" class="active"><a href="#home" role="pill" data-toggle="pill">Home</a></li>
+                <!--li><a href="#Health" role="pill" data-toggle="pill">Health</a></li-->
+                <li><a href="#Life" role="pill" data-toggle="pill">Life Insurance</a></li>
+                <li><a href="#ltc" role="pill" data-toggle="pill">Long Term Care</a></li>
+                <li><a href="#estate" role="pill" data-toggle="pill">Estate Planning</a></li>
+                <li><a href="#misc" role="pill" data-toggle="pill">Other Types of Insurance</a></li>
+            </ul>
+        </div>
+    </div>
 
-<div class="panel panel-default col-xs-3">
-    <div class="panel-heading">
-        <h3 class="panel-title">Life Insurance</h3>
+    <div class="tab-content">
+    <div class="tab-pane active" id="home">
+        <div class="row">
+            <div class="panel panel-default col-sm-3">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Life Insurance</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        We deal with three types of life insurance, and dozens of different companies. The three main types are Term insurance,
+                        Universal Life Insurance, and Whole Life.
+                    </p>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-3">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Long Term Care</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Long Term Care is a special kind of medical care for chronic illness.  It is the number one cause of financial problems during
+                        retirement.  It is NOT covered by typical health insurance.
+                    </p>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-3">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Estate Planning</h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Estate planning is essentially prptecting your assets and making sure they go where you want them to go.
+                        Estate taxes, probate, and long term care protection are important parts of estate planning.
+                    </p>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-3">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Other Types of Insurance</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>Property and Casualty (Auto / Home)</li>
+                        <li>Dental Insurance</li>
+                        <li>Vision Insurance</li>
+                        <li>Cancer Insurance</li>
+                        <li>Cash Medical Supplement</li>
+                        <li>Disability Insurance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>What we do</h2>
+                <p>
+                    Boulder Insurance Group was founded to give clear, honest personal insurance consulting.
+                    Our emphasis on individual and group health insurance makes navigating the various choices easier.
+                    The whole process starts with a personal interview to discover your own individual insurance needs.
+                    Information is gathered about things like your current insurance, budget, deductible tolerance,
+                    and what plans your doctor accepts.
+                    Hospital choice can be an important factor; some health insurance plans only work with certain hospitals.
+                    We are independent insurance agents that work for our clients to find the best solutions to their
+                    individual needs.  The best part is, the companies pay us, not our customers.
+                </p>
+                <p>
+                    We take pride in our ability to bring the same objective viewpoint to
+                    serving our customers life insurance, long term care insurance, medicare supplement insurance,
+                    and tax advantaged retirement planning needs. We have the ability to compare insurance plans with you
+                    so that you receive the right coverage for your lifestyle and situation.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <iframe width="100%" height="315" src="//www.youtube.com/embed/xbos2Z3y_kw" frameborder="0" allowfullscreen></iframe>
+                <!--iframe width="560" height="315" src="//www.youtube.com/embed/xbos2Z3y_kw" frameborder="0" allowfullscreen></iframe-->
+            </div>
+        </div>
     </div>
-    <div class="panel-body">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fuga ipsum iusto odit placeat, praesentium
-            temporibus velit? Asperiores at cupiditate est facere nemo officia, rerum voluptatibus.
-            Consectetur nihil quis soluta?
-        </p>
+    <!--div class="tab-pane" id="Health">
+        <h1>Health Insurance</h1>
+    </div-->
+    <div class="tab-pane" id="Life">
+        <h1>Life Insurance</h1>
+        <div class="row">
+            <div id="term" class="col-sm-4">
+                <h3>Term</h3>
+                <p>
+                    Is the least expensive, but only lasts for a specific
+                    number of years - 10, 20, or 30 years usually.  This type of insurance pays out less than 1% of the time because
+                    it is usually not in force when you need it. Great for young families and temporary life insurance needs.
+                </p>
+            </div>
+            <div id="IUL" class="col-sm-4">
+                <h3>Indexed Universal Life (IUL)</h3>
+                <p>
+                    Indexed Universal Life (IUL), is used for growing cash value inside the policy.  Did you know
+                    that life insurance has living benefits that can be used during your lifetime?  The main reason for this type of
+                    permanent insurance is to create tax free income during retirement.  Premiums can stop at age 65, and income begin.
+                    Also, the death benefit can be used to fund long term care with many policies we use.
+                </p>
+            </div>
+            <div id="whole" class="col-sm-4">
+                <h3>Whole Life</h3>
+                <p>
+                    The third type of life insurance is Whole Life. This is used for long term growth with guarentees.  The most exciting
+                    use for this type of policy is a concept called "infinite banking."  Here you can borrow money to pay for education,
+                    buying a car, or buying a house.  When you pay the loan back with interest, you esentially pay the interest to yourself
+                    instead of a bank.
+                </p>
+            </div>
+        </div>
+        <div class="row col-sm-12 center-block">
+            <iframe width="100%" height="315" src="//www.youtube.com/embed/pB76HgXCmos" frameborder="0" allowfullscreen></iframe>
+            <!--iframe width="560" height="315" src="//www.youtube.com/embed/pB76HgXCmos" frameborder="0" allowfullscreen></iframe-->
+        </div>
     </div>
-</div>
+    <div class="tab-pane" id="ltc">
+        <h1>Long Term Care Insurance</h1>
+        <div class="row">
+            <div class="col-sm-8">
+                <!--h1>Long Term Care Insurance</h1-->
+                <p>
+                    Here are three strategies we use to handle the cost of long term care.
+                </p>
+                <p>
+                    The first is a traditional Long Term Care (LTC) insurance policy.
+                    These tend to be expensive, and can increase monthly premiums by as much as 40% in a single year.  They are not available if you
+                    are already having symptoms, or need the care.  The policies are usually available to purchase up to age 85 if you are in good health.
+                    There is usually no return of premium if the benefit is not used.
+                </p>
+                <p>
+                    The second is to use the death benefit from a life insurance policy that has chronic care benefits, or an LTC rider*.
+                    If you need the long term care, it is paid for from the future death benefit.  If you do not use the long term care feature,
+                    the death benefit will pass directly to your named beneficiary.  This is a way to have insurance if you need it, but still retain the
+                    value if you don't.  With this strategy, age 85 is usually the oldest you can qualify, if you are in good health.  All three types of life
+                    insurance can be used this way, but the original policy has to include this feature - it cannot be added later.
+                </p>
+                <p>
+                    The final strategy is used for people that have assets to protect and grow, but may not be healthy enough to qualify for LTC or life insurance.
+                    Many annuities can be set up with a provision for LTC accelerated benefits and strong consistent growth of existing capital.  Indexed annuities
+                    can grow when markets go up, but stay level when markets go down.  Annuities can have qualified (pre-tax) funds, or non-qualified (after-tax) funds.
+                    All annuities feature tax deferred growth.  Ask me for an example of how this important growth concept works, you will be amazed at the results.
+                    Money that is not used to pay for LTC can go directly to your named beneficiary.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <iframe width="100%" height="315" src="//www.youtube.com/embed/GHNkTJJAbS8" frameborder="0" allowfullscreen></iframe>
+                <!--iframe width="560" height="315" src="//www.youtube.com/embed/GHNkTJJAbS8" frameborder="0" allowfullscreen></iframe-->
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="estate">
+        <h1>Estate Planning</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>
+                    There are two things most people are afraid of in retirement.  The first is running out of money,
+                    in other words living too long.  A guaranteed monthly income plan can help with this.  The second is using
+                    up your assets by paying for long term care.  An estate plan is not complete without a plan for this.
+                </p>
+                <p>
+                    In order for your assets to be passed on the way you want, we need to do planning in advance.  Some important
+                    things to consider are estate taxes, trusts, will & probate, and finally what legacy you want to leave behind.
+                    We can help you put all you will need in place.  Keep in mind that you will need to work closely with you tax
+                    planner in many of these areas as well.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <!-- YouTube -->
+                <iframe width="560" height="315" src="//www.youtube.com/embed/x_xXwOMcVL4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="misc">
+        <h1>Other Types of Insurance</h1>
+        <div class="row">
+        <div class="col-sm-4">
+            <h3>Property and Casualty</h3>
+            <p>Homeowners and Auto insurance – we work with a brokerage that
+                can compare your rates between 20 different insurance companies from one simple
+                form.
+            </p>
+            <p>
+                <a href="QuoteSheet.pdf" target="_blank">Open the PDF form.</a>
+            </p>
+            <p>If you scan and include the declarations page (usually the
+                first page of the policy or renewal form) we can advise you on important coverage,
+                and the cost of those.</p>
+            <p>Property and Casualty insurance can be an important aspect
+                of estate planning.</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>Dental Insurance</h3>
+            <p>Dental insurance can be purchase along with your major
+                medical insurance in most cases, or as a stand-alone policy.Delta Dental is a good place to start for
+                comparing dental plans. There are
+                literally hundreds of different levels of coverage to choose from.
+            </p>
+            <p>
+                <a href="http://www.deltadentalcoversme.com/?agency=1716049271" target="_blank">Take a look at Delta Dental plans.</a>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h3>Vision Insurance</h3>
+            <p>Vision Insurance can also be purchased along with your major
+                medical insurance, or as a stand-alone product from Vision Service Plan.
+            </p>
+            <p><a href="" target="_blank">Vision Plans</a></p>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Cancer Insurance</h3>
+                <p>Did you know that there is insurance that can pay a cash
+                    amount if you are diagnosed with cancer? Some of these policies even contain a rider that will return your
+                    premium if you do not use the policy.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Cash Medical Supplement.</h3>
+                <p>
+                    This is a plan that can provide up to $10,000 to cover your
+                    high deductible if you have a major health event.
+                </p>
+                <p>
+                    <a href="http://www.ihcbenefits.com/balance/agent/8800493" target="_blank">
+                        Plans available
+                    </a>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h3>Disability Insurance </h3>
+                <p>Disability insurance is intended to replace your income if
+                    you are disabled and cannot work. The
+                    amount of insurance available depends on your previous years of income. Usually 60% of your income can be replaced
+                    while you are disabled, or until age 65 if the disability is permanent. Short term and long term disability policies
+                    are available.</p>
+                <p>Disability insurance requires a personal visit to determine
+                    the correct level to apply for.
+                </p>
+            </div>
+        </div>
 
-<div class="panel panel-default col-xs-3">
-    <div class="panel-heading">
-        <h3 class="panel-title">Long Term Care</h3>
-    </div>
-    <div class="panel-body">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fuga ipsum iusto odit placeat, praesentium
-            temporibus velit? Asperiores at cupiditate est facere nemo officia, rerum voluptatibus.
-            Consectetur nihil quis soluta?
-        </p>
-    </div>
-</div>
-
-<div class="panel panel-default col-xs-3">
-    <div class="panel-heading">
-        <h3 class="panel-title">Estate Planning</h3>
-    </div>
-    <div class="panel-body">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fuga ipsum iusto odit placeat, praesentium
-            temporibus velit? Asperiores at cupiditate est facere nemo officia, rerum voluptatibus.
-            Consectetur nihil quis soluta?
-        </p>
-    </div>
-</div>
-
-<div class="panel panel-default col-xs-3">
-    <div class="panel-heading">
-        <h3 class="panel-title">Other Types of Insurance</h3>
-    </div>
-    <div class="panel-body">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fuga ipsum iusto odit placeat, praesentium
-            temporibus velit? Asperiores at cupiditate est facere nemo officia, rerum voluptatibus.
-            Consectetur nihil quis soluta?
-        </p>
-    </div>
-</div>
-
-</div>
-
-    <div>
-        <h3>Life Insurance Pitch</h3>
-        <iframe width="420" height="315" src="//www.youtube.com/embed/hbQeuVaK0Bw?rel=0" frameborder="0" allowfullscreen></iframe>
-    </div>
 
     <!-- Site footer -->
-    <div class="col-xs-12 footer">
+    <div class="col-sm-12 text-center">
         &nbsp;
         <ul class="simple">
             <li><strong>Contact Us</strong></li>
             <li>Matt DeYoung</li>
             <li>303.517.5225</li>
-            <li><a href="mailto:mjdeyoung@thinkbigboulder.com">Email: mjdeyoung@thinkbigboulder.com</a></li>
+            <li><a href="mailto:mjdeyoung@thinkbigboulder.com">mjdeyoung@thinkbigboulder.com</a></li>
+            <li><a href="https://plus.google.com/108988821719532685133" rel="publisher">Google+</a></li>
         </ul>
         &nbsp;
         <p>&copy; Boulder Insurance Group 2014</p>
@@ -120,16 +317,3 @@
 </body>
 </html>
         
-<!--
-
-<meta> Lacks "content" Attribute (At line 4, column 5)
-<link> Lacks "type" Attribute (At line 8, column 5)
-<script> Lacks "type" Attribute (At line 11, column 5)
-<script> Lacks "type" Attribute (At line 13, column 5)
-<link> Lacks "type" Attribute (At line 15, column 5)
-Img Lacks "alt" Attribute (At line 25, column 18)
-Img Lacks "alt" Attribute (At line 29, column 13)
-Img Lacks "alt" Attribute (At line 32, column 13)
-Unknown Attribute "allowfullscreen" (At line 102, column 9)
-
- -->
