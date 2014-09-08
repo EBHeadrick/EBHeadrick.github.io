@@ -30,6 +30,12 @@ body {
 
 .simple {
     list-style-type: none;
+	margin: 2px 0 0;
+}
+
+#mjd {
+/* Matt's picture special formatting  */
+	position: right;
 }
 
 .panel,
@@ -40,4 +46,25 @@ body {
 .panel-default>.panel-heading
     {
     background-color: darkseagreen;
+}
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+.nav-pills > li + li {
+  margin-left: 4px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: seagreen;
+}
+.banner {
+	background-image: url('../img/flatirons.JPG');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1500px 300px;
 }
