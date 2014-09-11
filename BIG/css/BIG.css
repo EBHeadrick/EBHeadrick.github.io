@@ -38,6 +38,10 @@ body {
 	position: right;
 }
 
+#bigLogo {
+	float: left;
+}
+
 .panel,
 .panel-heading,
 .panel-title,
