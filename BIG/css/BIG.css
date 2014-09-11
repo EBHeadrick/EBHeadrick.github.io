@@ -35,11 +35,19 @@ body {
 
 #mjd {
 /* Matt's picture special formatting  */
-	position: right;
+	float:right;
 }
 
 #bigLogo {
 	float: left;
+}
+
+.banner {
+	background-image: url('../img/flatirons.JPG');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1500px 250px;
+	vertical-align: middle;
 }
 
 .panel,
@@ -66,9 +74,4 @@ body {
   color: #fff;
   background-color: seagreen;
 }
-.banner {
-	background-image: url('../img/flatirons.JPG');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 1500px 300px;
-}
+
