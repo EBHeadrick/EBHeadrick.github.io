@@ -1,0 +1,81 @@
+body {
+	max-width: 1200px;
+	max-height: 1100px;
+    /* padding: 1em; */
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+	overflow: auto;
+	/* border-radius: 1em;
+	border: 1px solid #333; */
+}
+
+img {
+	vertical-align: bottom;
+	margin-bottom: 4px;
+}
+
+.pictureAdd { 
+	background-image: url('../img/troopercrop2.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	background-color: black;
+}
+
+.navbar-nav.nav-justified > li{
+    float: none;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.navbar-inner {
+	min-height: 5px; /* change value here*/
+	background-color: white;
+	background-image: none;
+	border-color: blue;
+	text-align: justify;
+	opacity: 0.6;
+	padding:0 0 0 0;
+	}
+
+.WhiteText {
+	color: white;
+}
+
+article {
+	float: left;
+	padding-top: 2em;
+	padding-left: 0;
+	padding-right:0;
+}
+
+article > img {
+	margin-bottom: 2em;
+}
+
+#box1, #box2{
+	background-color: DarkGray;
+    /*width: 300px; */
+	width: auto
+	max-width: 290px;
+    height: 190px;
+    border-bottom: 2em;
+	border-right: 2em;
+	border-color: white;
+    position: relative;
+}
+
+#box2 {
+	background: LightGrey;
+	padding-left: 1em;
+}
+
+aside {
+	float: right;
+}
+
+.date {
+	font-size: 80%;
+	font-style: italic;
+}
