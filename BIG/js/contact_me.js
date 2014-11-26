@@ -42,8 +42,6 @@ $(function() {
  	      },
  	   error: function() {		
  		// Fail message
-		alert($to,$email_subject,$email_body,$headers);
-
  		 $('#success').html("<div class='alert alert-danger'>");
             	$('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             	 .append( "</button>");
