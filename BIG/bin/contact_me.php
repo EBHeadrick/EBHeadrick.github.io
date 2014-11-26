@@ -8,6 +8,10 @@ if(empty($_POST['name'])  		||
 	echo "No arguments Provided!";
 	return false;
    }
+   
+ini_set('SMTP','localhost'); 
+ini_set('sendmail_from', 'webmaster@thinkbigboulder.com'); 
+
 	
 $name = $_POST['name'];
 $email_address = $_POST['email'];
