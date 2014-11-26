@@ -36,16 +36,16 @@ body {
 #mjd {
 /* Matt's picture special formatting  */
 	float: right;
-	/*height: 250px;*/
+	/*height: 250px;
 	height: 25%;
-	width: auto;
+	width: auto;*/
 	padding: 6em 2em 2em 2em;
 }
 
 #bigLogo {
 	float: left;
-	height: 200px;
-	width: auto;
+	/*height: 200px;
+	width: auto;*/
 	padding: 6em 2em 2em 2em;
 }
 
