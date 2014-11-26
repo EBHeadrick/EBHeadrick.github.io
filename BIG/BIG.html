@@ -23,6 +23,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	
+	<!-- JS FILES -->
+ <script src="./js/jqBootstrapValidation.js"></script>
+ <script src="./js/contact_me.js"></script>
+
 
     <link rel="stylesheet" href="css/BIG.css">
 	
@@ -40,10 +45,11 @@
 </head>
 <body>
 
-    <div class="row banner">
+<div class="row banner">
         <!--div id="homeLogo" class="col-sm-2"-->
             <a href="javascript:history.go(0)" >
-                <img id="bigLogo" src="img/BIG_logo.gif" width="15%" height="auto" alt="Logo for Boulder Insurance Group BIG" />
+                <img id="bigLogo" src="img/BIG_logo.gif" width="55%" height="auto" alt="Logo for Boulder Insurance Group BIG" />
+                <!--img id="bigLogo" src="img/BIG_logo.gif"  alt="Logo for Boulder Insurance Group BIG" /-->
             </a>
         <!--/div-->
 		<!--
@@ -51,39 +57,28 @@
             <img src="img/flatirons.JPG" width="100%" height="auto" alt="Boulder Flatirons" />
         </div>
         <div class="col-sm-offset-6 col-sm-2">
-		-->
-            <img id="mjd" src="img/MattsPhoto2.jpg" width="85%" height="auto" alt="Matt DeYoung insurance broker" />
+            <img id="mjd" src="img/MattsPhoto2.jpg" width="15%" height="auto" alt="Matt DeYoung insurance broker" />
 		<h1>Contact Us</h1>
-		<h3>303.517.5225</h3>
 		<h3><a href="mailto:mjdeyoung@thinkbigboulder.com">EMAIL Matt</a></h3>
-        <!--/div-->
-		<!--
-        <div class="col-sm-2">
-            <ul class="simple">
-                <li><strong>Contact Us</strong></li>
-                <li>Matt DeYoung</li>
-                <li>303.517.5225</li>
-                <li><a href="mailto:mjdeyoung@thinkbigboulder.com">
-					<strong>EMAIL</strong>
-					</a></li>
-            </ul>
-        </div>
 		-->
+        <img id="mjd" src="img/MattsPhoto2.jpg" width="15%" height="auto" alt="Matt DeYoung insurance broker" />
+		<div class="center-block">
+		<h1>303.517.5225</h1>
+		</div>
     </div>
 	
 <div class="container">
 
     <div class="row">
-        <div class="col-sm-12">
+        <div>
             <!-- Nav pills -->
             <ul id="mainNav" class="nav nav-pills">
                 <li id="homePill" class="active"><a href="#home" role="pill" data-toggle="pill">Home</a></li>
-                <!--li><a href="#Health" role="pill" data-toggle="pill">Health</a></li-->
-                <li><a href="#Life" role="pill" data-toggle="pill">Life Insurance</a></li>
-                <li><a href="#ltc" role="pill" data-toggle="pill">Long Term Care</a></li>
-                <li><a href="#estate" role="pill" data-toggle="pill">Estate Planning</a></li>
-                <li><a href="#misc" role="pill" data-toggle="pill">Other Types of Insurance</a></li>
-                <li><a href="#annu" role="pill" data-toggle="pill">Annuities</a></li>
+                <li id="lifePill"><a href="#Life" role="pill" data-toggle="pill">Life Insurance</a></li>
+                <li id="ltcPill"><a href="#ltc" role="pill" data-toggle="pill">Long Term Care</a></li>
+                <li id="estatePill"><a href="#estate" role="pill" data-toggle="pill">Estate Planning</a></li>
+                <li id="miscPill"><a href="#misc" role="pill" data-toggle="pill">Other Types of Insurance</a></li>
+                <li id="annuPill"><a href="#annu" role="pill" data-toggle="pill">Annuities</a></li>
             </ul>
         </div>
     </div>
@@ -91,36 +86,74 @@
     <div class="tab-content">
     <div class="tab-pane active" id="home">
         <div class="row">
-            <div class="col-sm-4">
-                <!--  This link didn't work like I wanted it too.
-                <a href="#Life" role="pill" data-toggle="pill"-->
-                <h3>Life Insurance</h3>
+		
+			
+<div class="container col-sm-3">	
+ <!-- Contacts -->
+ <div id="contacts">
+   <div class="row">	
+     <!-- Alignment -->
+	<div>
+	   <!-- Form itself -->
+          <form name="sentMessage" class="well" id="contactForm"  novalidate>
+	       <legend>Contact Agent</legend>
+		 <div class="control-group">
+                    <div class="controls">
+			<input type="text" class="form-control" 
+			   	   placeholder="Full Name" id="name" required
+			           data-validation-required-message="Please enter your name" />
+			  <p class="help-block"></p>
+		   </div>
+	         </div> 	
+                <div class="control-group">
+                  <div class="controls">
+			<input type="email" class="form-control" placeholder="Email" 
+			   	            id="email" required
+			   		   data-validation-required-message="Please enter your email" />
+		</div>
+	    </div> 	
+			  
+               <div class="control-group">
+                 <div class="controls">
+				 <textarea rows="10" cols="100" class="form-control" 
+                       placeholder="Message" id="message" required
+		       data-validation-required-message="Please enter your message" minlength="5" 
+                       data-validation-minlength-message="Min 5 characters" 
+                        maxlength="999" style="resize:none"></textarea>
+		</div>
+               </div> 		 
+	     <div id="success"> </div> <!-- For success/fail messages -->
+	    <button type="submit" class="btn btn-primary pull-right">Send</button><br />
+          </form>
+	</div>
+      </div>
+    </div>
+   </div>
+		
+            <div class="col-sm-4"><h3>Life Insurance</h3>
                 <p>
                     We deal with three types of life insurance, and dozens of different companies. The three main types
                     are Term Insurance,
                     Universal Life Insurance, and Whole Life.
                 </p>
-                <!--/a-->
+				<a href="#Life" class="btn btn-primary pull-right" role="pill" data-toggle="pill">More about Life</a>
             </div>
-            <div class="col-sm-4">
-                <h3>Long Term Care</h3>
+            <div class="col-sm-4"><h3>Long Term Care</h3>
                 <p>
                     Long Term Care is a special kind of medical care for chronic illness.  It is the number one cause of
                     financial problems during
                     retirement.  It is NOT covered by typical health insurance.
                 </p>
+				<a href="#ltc" class="btn btn-primary pull-right" role="pill" data-toggle="pill">More about Long Term Care</a>
             </div>
-            <div class="col-sm-4">
-                <h3>Estate Planning</h3>
+            <div class="col-sm-4"><h3>Estate Planning</h3>
                 <p>
                     Estate planning is essentially protecting your assets and making sure they go where you want them to go.
                     Estate taxes, probate, and long term care protection are important parts of estate planning.
                 </p>
+				<a href="#Estate" class="btn btn-primary pull-right" role="pill" data-toggle="pill">More about Estate</a>
             </div>
-            </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <h3 class="">Other Types of Insurance</h3>
+            <div class="col-sm-4"><h3>Other Types of Insurance</h3>
                 <ul>
                     <li>Property and Casualty (Auto / Home)</li>
                     <li>Dental Insurance</li>
@@ -129,18 +162,18 @@
                     <li>Cash Medical Supplement</li>
                     <li>Disability Insurance</li>
                 </ul>
-            </div>
-            <div class="col-sm-4">
-                <h3 class="">Annuities</h3>
+				<a href="#misc" class="btn btn-primary pull-right" role="pill" data-toggle="pill">More about other types</a>
+           </div>
+            <div class="col-sm-4"><h3>Annuities</h3>
                 <p>
                     Annuities can provide life time income that is guaranteed for as long as you live.
                     It is a way to replace the monthly pension checks your parents got when they retired.
                 </p>
+ 				<a href="#annu" class="btn btn-primary pull-right" role="pill" data-toggle="pill">More about Annuities</a>
+          </div>
             </div>
-        </div>
         <div class="row">
-            <div class="col-sm-6">
-                <h2>What we do</h2>
+            <div class="col-sm-6"><h2>What we do</h2>
                 <p>
                     Boulder Insurance Group was founded to give clear, honest personal insurance consulting.
                     Our focus on life insurance and income planning makes us unique.
@@ -164,11 +197,7 @@
             </div>
         </div>
     </div>
-    <!--div class="tab-pane" id="Health">
-        <h1>Health Insurance</h1>
-    </div-->
-    <div class="tab-pane" id="Life">
-        <h1>Life Insurance</h1>
+    <div class="tab-pane" id="Life"><h1>Life Insurance</h1>
         <div class="row">
             <div id="term" class="col-sm-4">
                 <h3>Term</h3>
@@ -202,8 +231,7 @@
             <!--iframe width="560" height="315" src="//www.youtube.com/embed/pB76HgXCmos" frameborder="0" allowfullscreen></iframe-->
         </div>
     </div>
-    <div class="tab-pane" id="ltc">
-        <h1>Long Term Care Insurance</h1>
+    <div class="tab-pane" id="ltc"><h1>Long Term Care Insurance</h1>
         <div class="row">
             <div class="col-sm-8">
                 <!--h1>Long Term Care Insurance</h1-->
@@ -246,8 +274,7 @@
             </div>
         </div>
     </div>
-    <div class="tab-pane" id="estate">
-        <h1>Estate Planning</h1>
+    <div class="tab-pane" id="estate"><h1>Estate Planning</h1>
         <div class="row">
             <div class="col-sm-6">
                 <p>
@@ -268,8 +295,7 @@
             </div>
         </div>
     </div>
-    <div class="tab-pane" id="misc">
-        <h1>Other Types of Insurance</h1>
+    <div class="tab-pane" id="misc"><h1>Other Types of Insurance</h1>
         <div class="row">
         <div class="col-sm-4">
             <h3>Property and Casualty</h3>
@@ -339,8 +365,7 @@
 
 
 </div>
-    <div class="tab-pane" id="annu">
-        <h1>Annuities</h1>
+    <div class="tab-pane" id="annu"><h1>Annuities</h1>
         <div class="row">
             <div class="col-sm-6">
                 <p>

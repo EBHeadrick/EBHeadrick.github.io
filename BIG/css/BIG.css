@@ -35,11 +35,21 @@ body {
 
 #mjd {
 /* Matt's picture special formatting  */
-	float:right;
+	float: right;
+	/*height: 250px;*/
+	height: 25%;
+	width: auto;
+	padding: 6em 2em 2em 2em;
 }
 
 #bigLogo {
 	float: left;
+	height: 200px;
+	width: auto;
+	padding: 6em 2em 2em 2em;
+}
+
+.banner h1, h3 {
 }
 
 .banner {
@@ -50,6 +60,20 @@ body {
 	vertical-align: middle;
 }
 
+.center-block {
+	text-align: center;
+	background-color: white;
+	height: 50px;
+	width: 300px;
+	opacity: 0.6;
+	/*position: absolute;
+	bottom: 0;*/
+}
+
+.contacts {
+	font-size: 12pt;
+}
+
 .panel,
 .panel-heading,
 .panel-title,
@@ -58,6 +82,7 @@ body {
 .panel-default>.panel-heading
     {
     background-color: darkseagreen;
+	font-size-adjust: 14pt;
 }
 .nav-pills > li {
   float: left;
@@ -75,3 +100,18 @@ body {
   background-color: seagreen;
 }
 
+.btn:hover ,
+.btn-primary:hover {
+	background-color: seagreen;
+	text-decoration: bold;
+}
+
+.btn ,
+.btn-primary {
+	background-color: darkseagreen;
+	text-decoration: bold;
+}
+
+form {
+	background-color: seagreen;
+}
